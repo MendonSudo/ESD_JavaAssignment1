@@ -5,6 +5,7 @@ class Armstrong {
 		int num = 1634;
 		int sum=0,temp,digit,iter=0;
 		
+		//to get number of digits
 		temp = num;
 		while(temp > 0) {
 			temp /= 10;
@@ -12,6 +13,7 @@ class Armstrong {
 			//System.out.println(iter);
 		}
 		
+		//Each digit to the power "iter" --> result in "sum"
 		temp = num;
 		while(temp > 0) {
 			digit = temp % 10;
