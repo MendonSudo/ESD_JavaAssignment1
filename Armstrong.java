@@ -2,22 +2,24 @@
 
 class Armstrong {
 	public static void main(String args[]) {
-		int num = 153;
+		int num = 1634;
 		int sum=0,temp,digit,iter=0;
-		temp = num;
 		
-		while(temp !=0) {
-			iter = iter+1;
-			temp = temp / 10;
-			System.out.println(iter);
+		temp = num;
+		while(temp > 0) {
+			temp /= 10;
+			iter++;
+			//System.out.println(iter);
 		}
-		/*
-		while(num > 0) {
-			digit = num % 10;
-			sum += Math.pow(digit,num);
-			num = num / 10;
-		} */
-		if(sum == temp) {
+		
+		temp = num;
+		while(temp > 0) {
+			digit = temp % 10;
+			sum += Math.pow(digit,iter);
+			temp = temp / 10;
+		}
+		
+		if(sum == num) {
 			System.out.println("Armstrong\n");
 		}
 		else
