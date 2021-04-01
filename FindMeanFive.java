@@ -7,11 +7,11 @@ class FindMeanFive {
 		int n=5,i;
 		double sum=0;
 		int[] arr1 = new int[n];
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter "+ n +" numbers");
-		for(i=0; i<n; i++)
-			arr1[i] = sc.nextInt();
-		
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter "+ n +" numbers");
+			for(i=0; i<n; i++)
+				arr1[i] = sc.nextInt();
+		}
 		for(i=0; i<n; i++)
 			sum +=arr1[i];
 		
