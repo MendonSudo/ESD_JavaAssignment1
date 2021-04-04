@@ -1,4 +1,4 @@
-/* Implement a JAVA program to find the square root using newton raphson method. */
+/* 6. Implement a JAVA program to find the square root using newton raphson method. */
 
 class SqrtNewtonRaphson {
 	public static void main(String args[]) {
