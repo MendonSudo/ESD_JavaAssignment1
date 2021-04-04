@@ -12,7 +12,7 @@ class CheckFibonacci {
 		else return false;
 	}
 	public static void main(String args[]) {
-		int n=22;
+		int n=21;
 		
 		if(checkSqure(5*n*n + 4) || checkSqure(5*n*n - 4))
 			System.out.println(n +" is a Fibonacci number");
